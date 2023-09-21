@@ -17,7 +17,7 @@ public class fyouimgay{
             totalCost += cost;
         }
         totalCost++; //gets rid of -1
-
+        //pushtest
         System.out.println("___________________________________");
         System.out.println("Total before tip: $" + totalCost);
         System.out.println("Tip percentage: " + (int)(tip) + "%");

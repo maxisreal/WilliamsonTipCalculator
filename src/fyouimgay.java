@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 //https://mkyong.com/java/how-to-round-double-float-value-to-2-decimal-points-in-java/
 public class fyouimgay{
@@ -14,8 +13,7 @@ public class fyouimgay{
         System.out.print("Enter the tip percentage (0-100%): ");
         double tip = scan.nextDouble();
         double cost = 0;
-        while(tip <= 100);
-        {
+        while (tip <= 100){
             System.out.print("Enter the tip percentage (0-100%): ");
             tip = scan.nextDouble();
         }

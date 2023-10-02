@@ -28,7 +28,7 @@ public class fyouimgay{
         String currency = null;
         double convert = 2;
         while (convert == 2) {
-            System.out.println("Enter currency type (₩on, u$d, €uro, ¥en): ");
+            System.out.print("Enter currency type (₩on, u$d, €uro, ¥en): ");
             currency = scan.nextLine();
             switch (currency) {
                 case "yen" -> {

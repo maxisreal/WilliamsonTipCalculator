@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 import java.text.DecimalFormat;
@@ -7,7 +6,6 @@ public class fyouimgay{
     private static final DecimalFormat df = new DecimalFormat("0.00");
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
 
         System.out.print("How many people in your group?: ");
         int number = scan.nextInt();
@@ -20,17 +18,17 @@ public class fyouimgay{
         }
         double totalCost = 0;
 
-
         while (cost != -1) {
             System.out.print("Enter a cost in dollars and cents (type -1 to end): ");
             cost = scan.nextDouble();
             totalCost += cost;
         }
+        scan.nextLine();
         totalCost++; //gets rid of -1
         String currency = null;
         double convert = 2;
         while (convert == 2) {
-            System.out.println("Enter currency type (₩, $, €, ¥): ");
+            System.out.println("Enter currency type (₩on, u$d, €uro, ¥en): ");
             currency = scan.nextLine();
             switch (currency) {
                 case "yen" -> {
@@ -52,7 +50,7 @@ public class fyouimgay{
                 default -> currency = "?";
             }
         }
-            totalCost *= convert;
+        totalCost *= convert;
         System.out.println("___________________________________");
         System.out.println("Total before tip: " + currency + df.format(totalCost*convert));
         System.out.println("Tip percentage: " + (int)(tip) + "%");
